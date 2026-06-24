@@ -1,0 +1,3 @@
+AppImage Nurse 0.9.20 Preview
+Built as a statically linked terminal utility.
+Change: RAM workspace now pauses after actions and redraws the RAM menu cleanly.
