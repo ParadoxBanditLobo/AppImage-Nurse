@@ -1,0 +1,115 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4g4vju80wyac"]
+
+[ext_resource type="Script" uid="uid://co6wdsg8wy15f" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Control" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ig7tw")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Flash Card App"
+
+[node name="ThemeLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Choose Theme"
+
+[node name="ThemeButtons" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="LightButton" type="Button" parent="VBoxContainer/ThemeButtons"]
+layout_mode = 2
+text = "Light"
+
+[node name="DarkButton" type="Button" parent="VBoxContainer/ThemeButtons"]
+layout_mode = 2
+text = "Dark"
+
+[node name="FilesLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Selected Files: 0"
+
+[node name="FileButtons" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="AddFilesButton" type="Button" parent="VBoxContainer/FileButtons"]
+layout_mode = 2
+text = "Add Files"
+
+[node name="StartButton" type="Button" parent="VBoxContainer/FileButtons"]
+layout_mode = 2
+text = "Start"
+
+[node name="QuestionLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Question will appear here"
+
+[node name="AnswerArea" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="ShowAnswerButton" type="Button" parent="VBoxContainer/AnswerArea"]
+layout_mode = 2
+text = "Show Answer"
+
+[node name="AnswerLabel" type="Label" parent="VBoxContainer/AnswerArea"]
+layout_mode = 2
+text = "Answer will appear here"
+
+[node name="MarkButtons" type="HBoxContainer" parent="VBoxContainer/AnswerArea"]
+layout_mode = 2
+
+[node name="RightButton" type="Button" parent="VBoxContainer/AnswerArea/MarkButtons"]
+layout_mode = 2
+text = "I was right"
+
+[node name="WrongButton" type="Button" parent="VBoxContainer/AnswerArea/MarkButtons"]
+layout_mode = 2
+text = "I was wrong"
+
+[node name="MultipleChoiceArea" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Choice1" type="Button" parent="VBoxContainer/MultipleChoiceArea"]
+layout_mode = 2
+text = "Choice 1"
+
+[node name="Choice2" type="Button" parent="VBoxContainer/MultipleChoiceArea"]
+layout_mode = 2
+text = "Choice 2"
+
+[node name="Choice3" type="Button" parent="VBoxContainer/MultipleChoiceArea"]
+layout_mode = 2
+text = "Choice3"
+
+[node name="Choice4" type="Button" parent="VBoxContainer/MultipleChoiceArea"]
+layout_mode = 2
+text = "Choice 4"
+
+[node name="NextButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Next"
+
+[node name="ResultLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Results will appear here"
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "HELLO TEST"
+
+[node name="FileDialog" type="FileDialog" parent="."]
+title = "Open File(s)"
+file_mode = 1
+access = 2
