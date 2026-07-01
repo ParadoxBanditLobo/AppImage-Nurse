@@ -16,7 +16,7 @@ AppImage Nurse is a small terminal toolkit for inspecting, troubleshooting, extr
 - Tool path manager
 - Guided AppDir creation
 
-- ## Requirements
+## Requirements
 
 Core diagnosis works without extra tools.
 
@@ -28,14 +28,14 @@ Optional backend tools:
 - appstreamcli: AppStream metadata checks
 - (separate packages have their own licenses)
 
- ## Usage
+## Usage
 
 Download the release zip, extract it, then run:
 
 chmod +x appimage-nurse
 ./appimage-nurse
 
--Note that the application itself is not an appimage, if you so please you may generate one within the Checks (10) tab
+Note: AppImage Nurse itself is not currently shipped as an AppImage. It may be packaged as one separately.
 
 ## Scope
 
@@ -44,3 +44,9 @@ This is not a miracle worker, but meant to streamline troubleshooting.
 
 ## Full-Disclosure
 Ai was used to create the code for this application
+
+## Build from source
+
+```sh
+chmod +x build.sh
+./build.sh
