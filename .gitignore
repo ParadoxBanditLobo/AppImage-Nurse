@@ -1,0 +1,35 @@
+# Build output
+build/
+dist/
+release/
+
+# Compiled binaries
+appimage-nurse
+appimage-nurse-*
+*.o
+*.out
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tar.xz
+*.7z
+*.AppImage
+
+# Reports/session output
+*.log
+*.txt.bak
+reports/
+sessions/
+
+# Local editor/system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temp files
+*.tmp
+*.bak
