@@ -50,3 +50,16 @@ Ai was used to create the code for this application
 ```sh
 chmod +x build.sh
 ./build.sh
+```
+
+The built executable will be placed at:
+
+```text
+build/appimage-nurse
+```
+
+Run it with:
+
+```sh
+./build/appimage-nurse
+```
